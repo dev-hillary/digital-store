@@ -1,16 +1,60 @@
-# React + Vite
+# Digital Store 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Olá! Meu nome é **Hillary Alcântara** e este é o meu projeto de Front-end desenvolvido durante o curso **Geração Tech – Desenvolvimento Full Stack**.
 
-Currently, two official plugins are available:
+##  Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A **Digital Store** é uma aplicação de loja virtual desenvolvida com React. O projeto tem como objetivo colocar em prática os conhecimentos adquiridos durante o curso, trabalhando com criação de componentes, organização de páginas, estilização e navegação entre telas.
 
-## React Compiler
+A aplicação apresenta uma interface de e-commerce, permitindo visualizar produtos, utilizar filtros, ordenar itens e acessar os detalhes de cada produto.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+- React Router DOM
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Funcionalidades
+
+- Página inicial com banner e produtos em destaque.
+- Exibição de produtos em cards.
+- Página de listagem de produtos.
+- Filtros por categoria e faixa de preço.
+- Ordenação de produtos por preço.
+- Página de detalhes dos produtos.
+- Seleção de tamanho e cor.
+- Produtos recomendados.
+- Navegação entre páginas.
+
+## 🖥️ Demonstração
+
+Acesse a versão publicada do projeto:
+
+**[🔗 Clique aqui para acessar a Digital Store](https://digital-store-095q.netlify.app/)**
+
+## 📸 Telas do projeto
+
+### Página inicial
+
+![Página inicial da Digital Store](./screenshots/home.png)
+
+### Página de produtos
+
+![Página de produtos da Digital Store](./screenshots/produtos.png)
+
+### Detalhes do produto
+
+![Detalhes do produto da Digital Store](./screenshots/detalhes-produto.png)
+
+## 👩‍💻 Desenvolvedora
+
+**Hillary Alcântara**
+
+Projeto desenvolvido como atividade prática do curso **Geração Tech – Desenvolvimento Full Stack**.
+
+---
+
+Obrigada por visitar meu projeto!
