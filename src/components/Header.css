@@ -1,0 +1,396 @@
+
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 100;
+}
+
+.header-top {
+  padding: 30px 0 20px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 102;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.menu-button {
+  display: none;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 550px;
+  height: 48px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.search-form input {
+  width: 100%;
+  height: 100%;
+  padding: 0 18px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+}
+
+.search-form button {
+  height: 100%;
+  padding: 0 16px;
+  border: none;
+  background: transparent;
+  color: #666666;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  color: #c92071;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.register-link {
+  color: #474747;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.login-button {
+  background-color: #c92071;
+  color: #ffffff;
+  padding: 12px 35px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.login-button:hover {
+  background-color: #991956;
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+}
+
+.cart-link img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.mobile-search-button {
+  display: none;
+}
+
+.mobile-search-form {
+  display: none;
+}
+
+.navigation {
+  padding: 15px 0;
+  background-color: #ffffff;
+}
+
+.navigation .header-container {
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.nav-link {
+  color: #474747;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #c92071;
+}
+
+.nav-link.active {
+  font-weight: 700;
+  border-bottom: 2px solid #c92071;
+  padding-bottom: 5px;
+}
+
+.mobile-menu-heading,
+.mobile-menu-actions {
+  display: none;
+}
+
+.menu-overlay {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .header-container {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .search-form {
+    order: 3;
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .header-actions {
+    gap: 12px;
+  }
+
+  .navigation .header-container {
+    gap: 22px;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-top {
+    padding: 18px 0;
+  }
+
+  .header-container {
+    width: 92%;
+    display: grid;
+    grid-template-columns: 35px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    width: 30px;
+    height: 35px;
+    padding: 4px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .menu-button span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #474747;
+    border-radius: 3px;
+  }
+
+  .header-logo {
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .header-actions {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  .header-actions .register-link,
+  .header-actions .login-button {
+    display: none;
+  }
+
+  .mobile-search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #474747;
+    cursor: pointer;
+  }
+
+  .cart-link img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .search-form {
+    display: none;
+  }
+
+  .mobile-search-form {
+    display: flex;
+    width: 92%;
+    height: 44px;
+    margin: 15px auto 0;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .mobile-search-form input {
+    width: 100%;
+    min-width: 0;
+    padding: 0 14px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+  }
+
+  .mobile-search-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 14px;
+    border: none;
+    background: transparent;
+    color: #666666;
+    cursor: pointer;
+  }
+
+  .navigation {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    height: 100dvh;
+    padding: 25px 22px;
+    background-color: #ffffff;
+    z-index: 105;
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.08);
+    overflow-y: auto;
+  }
+
+  .navigation.menu-open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #eeeeee;
+    color: #474747;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .mobile-menu-heading button {
+    border: none;
+    background: transparent;
+    color: #474747;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .navigation .header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin: 0;
+  }
+
+  .nav-link {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 15px;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .nav-link.active {
+    border-bottom: 1px solid #eeeeee;
+    color: #c92071;
+  }
+
+  .mobile-menu-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    margin-top: auto;
+    padding-top: 35px;
+  }
+
+  .mobile-login-button {
+    display: inline-block;
+    padding: 11px 30px;
+    border-radius: 6px;
+    background-color: #c92071;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  .mobile-login-button:hover {
+    background-color: #991956;
+  }
+
+  .mobile-register-link {
+    color: #474747;
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-color: #474747;
+    text-underline-offset: 5px;
+  }
+
+  .menu-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 104;
+  }
+}
+
+@media (max-width: 380px) {
+  .navigation {
+    width: 260px;
+  }
+
+  .header-container {
+    width: 94%;
+  }
+
+  .header-actions {
+    gap: 9px;
+  }
+}
