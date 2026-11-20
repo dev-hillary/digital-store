@@ -17,7 +17,7 @@ A aplicação apresenta uma interface de e-commerce, permitindo visualizar produ
 - Vite
 - React Router DOM
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 - Página inicial com banner e produtos em destaque.
 - Exibição de produtos em cards.
@@ -29,13 +29,13 @@ A aplicação apresenta uma interface de e-commerce, permitindo visualizar produ
 - Produtos recomendados.
 - Navegação entre páginas.
 
-## 🖥️ Demonstração
+##  Demonstração
 
 Acesse a versão publicada do projeto:
 
 **[🔗 Clique aqui para acessar a Digital Store](https://digital-store-095q.netlify.app/)**
 
-## 📸 Telas do projeto
+##  Telas do projeto
 
 ### Página inicial
 
